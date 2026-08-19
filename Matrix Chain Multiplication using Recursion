@@ -1,0 +1,27 @@
+import java.util.*;
+public class  Main{
+    public static int MCM(int arr[],int i,int j){
+        if(i==j){
+            return 0;
+        }
+        int mincost=Integer.MAX_VALUE;
+        for(int k=i;k<=j-1;k++){
+            int cost1=MCM(arr,i,k);
+            int cost2=MCM(arr,k+1,j);
+            int cost3=arr[i-1]*arr[k]*arr[j];
+            int totalcost=cost1+cost2+cost3;
+            mincost=Math.min(totalcost,mincost);
+
+        }
+        return mincost;
+    }
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.println(MCM(arr,1,n-1));
+    }
+}
