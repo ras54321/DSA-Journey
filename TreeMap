@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main{
+    public static void  main(String[]args) {
+        TreeMap<String,Integer>tm=new TreeMap<>();
+        tm.put("India",100);
+        tm.put("China",150);
+        tm.put("USA",50);
+        tm.put("Indonesia",6);
+        System.out.println(tm);
+        System.out.println(tm.get("India"));
+        System.out.println(tm.get("Indonesia"));
+        System.out.println(tm.containsKey("India"));
+        System.out.println(tm.containsKey("Indonesia"));
+        System.out.println(tm.remove("USA"));
+        System.out.println(tm);
+        System.out.println(tm.size());
+        tm.clear();
+        System.out.println(tm.isEmpty());
+        
+        
+    }
+}
