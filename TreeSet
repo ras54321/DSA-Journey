@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		TreeSet<String> ts=new TreeSet<>();
+		ts.add("Delhi");
+		ts.add("Mumbai");
+	  ts.add("Kolkata");
+		ts.add("Hyderabad");
+		System.out.println(ts);
+	}
+}
