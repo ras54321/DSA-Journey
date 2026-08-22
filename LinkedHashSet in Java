@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		LinkedHashSet<String> lhs=new LinkedHashSet<>();
+		lhs.add("Delhi");
+		lhs.add("Mumbai");
+	  lhs.add("Kolkata");
+		lhs.add("Hyderabad");
+		System.out.println(lhs);
+		lhs.clear();
+		System.out.println(lhs.isEmpty());
+		
+	}
+}
